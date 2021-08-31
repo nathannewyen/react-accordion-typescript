@@ -1,24 +1,53 @@
-import React from 'react';
-import logo from './logo.svg';
+import {useState} from 'react';
 import './App.css';
+import { Accordion } from './components/Accordion';
 
+
+const accordionList = [
+  {
+    title: "Horses can sleep both lying down and, standing up. Domestic horses have a lifespan of around 25 years.",
+    icon: "🐴",
+  },
+  {
+    title: "Rhino skin maybe thick but it can be quite sensitive to sunburns and insect bites which is why they like wallow so much.",
+    icon: "🦏",
+  },
+  {
+    title: "If you looking to hunt a unicorn, but don't know where to begin, try Lake Superior State University in Sault Ste. Marie, Michigan.",
+    icon: "🦄",
+  }
+]
 function App() {
+
+  // const iconLeft = '👈';
+  // const iconDown = '👇';
+
+  // const [iconRotateLeft, setIconRotateLeft] = useState([{}]);
+  // const [iconRotateDown, setIconRotateDown] = useState([{}]);
+
+  // const toggleAccordion = (accordion: any, index: any) => {
+    
+  //   const leftIcon = iconRotateLeft;
+  //   leftIcon[index] = false;
+  //   setIconRotateLeft(leftIcon)
+
+  //   const downIcon = iconRotateDown;
+  //   downIcon[index] = true;
+  //   setIconRotateDown(downIcon);
+  // }
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-header">
+        {accordionList.map((accordion, index) => (
+          <ul className="accordion-list" key={index}>
+            <div className="accordion-item">
+              <Accordion accordion={accordion} />
+            </div>
+          </ul>
+        ))}
+      </div>
     </div>
   );
 }

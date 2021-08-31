@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.accordion-list .accordion-item {
+  list-style-type: none;
+  text-align: justify;
+  font-size: 18px;
+  width: 350px;
+}
+
+button {
+  background-color: #394858;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #737D87;
+}
