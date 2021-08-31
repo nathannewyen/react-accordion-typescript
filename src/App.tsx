@@ -1,4 +1,3 @@
-import {useState} from 'react';
 import './App.css';
 import { Accordion } from './components/Accordion';
 
@@ -18,25 +17,6 @@ const accordionList = [
   }
 ]
 function App() {
-
-  // const iconLeft = '👈';
-  // const iconDown = '👇';
-
-  // const [iconRotateLeft, setIconRotateLeft] = useState([{}]);
-  // const [iconRotateDown, setIconRotateDown] = useState([{}]);
-
-  // const toggleAccordion = (accordion: any, index: any) => {
-    
-  //   const leftIcon = iconRotateLeft;
-  //   leftIcon[index] = false;
-  //   setIconRotateLeft(leftIcon)
-
-  //   const downIcon = iconRotateDown;
-  //   downIcon[index] = true;
-  //   setIconRotateDown(downIcon);
-  // }
-
-  
   return (
     <div className="App">
       <div className="App-header">

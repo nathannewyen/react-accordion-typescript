@@ -1,4 +1,4 @@
-// interface accordion {
-//     title: string,
-//     icon: string,
-// }
+interface accordion {
+    title: string,
+    icon: string,
+}
